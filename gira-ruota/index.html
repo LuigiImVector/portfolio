@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title></title>
+        <meta charset="utf-8" />
+
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+
+    <body>
+        <div id="description-ruota">
+            G<u>i</u>ra la ruota per provare uno dei miei p<u>r</u>ogetti
+            <div><a href="/">Clicca qui</a> per la lista completa</div>
+        </div>
+        
+        <div id="pagina-ruota">
+            <div id="container-ruota">
+                <div id="ruota">
+                    <div id="slice1"> <!-- Non fa nulla slice1 -->
+                        <span class="span1"></span>
+                        <span class="span2"></span>
+                        <span class="span3"></span>
+                        <span class="span4"></span>
+                    </div>
+                    <div id="slice2">
+                        <span class="span1"></span>
+                        <span class="span2"></span>
+                        <span class="span3"></span>
+                        <span class="span4"></span>
+                    </div>
+                </div>
+                <button id="spin" onclick="spin()">Gira</button>
+            </div>
+        </div>
+
+        <script>
+            const incremento = 1620; // deg + 135 per incrementare la velocità
+            deg = incremento;
+
+            function spin() {
+
+                document.getElementById("ruota").style.transform = "rotate("+deg+"deg)";
+
+                deg+=incremento;
+            }
+        </script>
+    </body>
+</html>

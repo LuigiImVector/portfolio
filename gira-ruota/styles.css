@@ -1,0 +1,124 @@
+/* Ruota */
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #FFD42D;
+    background-size: cover;
+    font-family: 'Franklin Gothic';
+    overflow: hidden;
+}
+
+#description-ruota a, #description-ruota a:active, #description-ruota a:focus {
+    color: white;
+    text-decoration: underline;
+}
+
+#description-ruota a:hover {
+    text-decoration: none;
+}
+
+#description-ruota div {
+    font-size: 25px;
+}
+
+#description-ruota {
+    color: white;
+    font-size: 70px;
+    text-align: center;
+    padding-top: 10%;
+}
+
+#pagina-ruota {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#container-ruota {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    /*bottom: -230px;*/
+    top: -10%;
+}
+
+#container-ruota::before {
+    position: absolute;
+    content: '↓';
+    text-align: center;
+    font-size: 20px;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#ruota {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 50%;
+    border: 10px solid black;
+    overflow: hidden;
+    transition: all 3s ease-in-out;
+}
+
+span {
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+    position: absolute;
+}
+
+.span1 {
+    clip-path: polygon(0 92%, 100% 50%, 0 8%);
+    background-color: #FF2D2D;
+    top: 120px;
+    left: 0;
+}
+
+.span2 {
+    clip-path: polygon(100% 92%, 0 50%, 100% 8%);
+    background-color: #3D2DFF;
+    top: 120px;
+    right: 0;
+}
+
+.span3 {
+    clip-path: polygon(50% 0%, 8% 100%, 92% 100%);
+    background-color: #2DFF3A;
+    bottom: 0;
+    left: 120px;
+}
+
+.span4 {
+    clip-path: polygon(50% 100%, 92% 0, 8% 0);
+    background-color: #2DCEFF;
+    top: 0;
+    left: 120px;
+}
+
+#slice2 {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-135deg);
+}
+
+#spin {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 1px solid black;
+    color: black;
+    background-color: #FFD42D;
+}
