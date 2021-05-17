@@ -5,6 +5,7 @@
         <meta charset="utf-8" />
 
         <link rel="stylesheet" type="text/css" href="styles.css" />
+        <script src="node_modules\universal-tilt.js/lib/universal-tilt.js"></script>
     </head>
 
     <body>
@@ -13,10 +14,31 @@
                 Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali
             </div>
 
-            <div id="title">
+            <div id="title" class="tilt">
                 <u>H</u>ello, I am a developer
+                <!--<div class="tilt"><u>H</u>ello, I am a developer</div>-->
                 <div id="subtitle">Dirlo in inglese fa figo</div>
             </div>
         </div>
+
+        <script>
+            const elems = document.querySelectorAll('.tilt');
+
+            const universalTilt = UniversalTilt.init({
+            elements: elems,
+            settings: {
+                exclude: /(iPod|iPhone|iPad|Android)/,
+                shine: false,
+                //reverse: true
+                scale: 1.1,
+                max: 10,
+                perspective: 5000
+
+            },
+            callbacks: {
+                // callbacks...
+            }
+            });
+        </script>
     </body>
 </html>
