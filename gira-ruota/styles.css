@@ -8,17 +8,16 @@ body {
     margin: 0;
     padding: 0;
     background: #FFD42D;
-    background-size: cover;
     font-family: 'Franklin Gothic';
     overflow: hidden;
 }
 
-#description-ruota a, #description-ruota a:active, #description-ruota a:focus {
+a, a:active, a:focus {
     color: white;
     text-decoration: underline;
 }
 
-#description-ruota a:hover {
+a:hover {
     text-decoration: none;
 }
 
@@ -32,6 +31,78 @@ body {
     text-align: center;
     padding-top: 10%;
 }
+
+#box-preview {
+    width: 35%;
+    height: auto;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 2% 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 1;
+}
+
+#close {
+    cursor: pointer;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    top: 0;
+    right: -10px;
+    padding: 12px 17px;
+    transform: translate(0%, -50%);
+    font-size: 20px;
+    border: none;
+}
+
+#name {
+    font-size: 40px;
+}
+
+#url {
+    display: block;
+    padding: 2% 0 1% 0;
+}
+
+/* Animation box-preview */
+.opacityOn {
+    display: block !important;
+    animation: opacity1 0.3s ease-in-out;
+    opacity: 1;
+}
+
+.opacityOff {
+    display: block !important;
+    animation: opacity0 0.3s ease-in-out;
+    opacity: 0;
+}
+
+@keyframes opacity1 {
+    0% { display: block; opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes opacity0 {
+    0% { opacity: 1; }
+    100% { opacity: 0; display: none; }
+}
+/* --- */
+
+#description {
+    padding: 0 2%;
+}
+
+#url, #description {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: black;
+}
+
 
 #pagina-ruota {
     display: flex;

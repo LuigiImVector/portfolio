@@ -12,6 +12,13 @@
             G<u>i</u>ra la ruota per provare uno dei miei p<u>r</u>ogetti
             <div><a href="/">Clicca qui</a> per la lista completa</div>
         </div>
+
+        <div id="box-preview">
+            <button id="close">&times;</button>
+            <div id="name">Nome</div>
+            <a id="url" href="/">Link progetto</a>
+            <div id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+        </div>
         
         <div id="pagina-ruota">
             <div id="container-ruota">
@@ -34,14 +41,41 @@
         </div>
 
         <script>
-            const incremento = 1620; // deg + 135 per incrementare la velocità
-            deg = incremento;
+            const incremento = 135; // deg + 135 per incrementare la velocità
+            var deg = 0;
+
+            var progetti = [
+                ["Nome1", "https://www.example.com/", "Descrizione", "img/immagine-forse.png"],
+                ["Nome2", "https://www.example.com/", "Descrizione", "img/immagine-forse.png"],
+                ["Nome3", "https://www.example.com/", "Descrizione", "img/immagine-forse.png"],
+                ["Nome4", "https://www.example.com/", "Descrizione", "img/immagine-forse.png"]
+            ]
 
             function spin() {
+                var tmp = Math.floor(Math.random() * 10);
+
+                deg += (tmp*incremento)*2;
 
                 document.getElementById("ruota").style.transform = "rotate("+deg+"deg)";
+                
+                setTimeout(function() {
+                    tmp = Math.floor(Math.random() * progetti.length);
 
-                deg+=incremento;
+                    document.getElementById("name").innerHTML = progetti[tmp][0];
+                    document.getElementById("url").href = progetti[tmp][1];
+                    document.getElementById("description").innerHTML = progetti[tmp][2];
+
+
+                    document.getElementById("box-preview").classList.remove("opacityOff");
+                    document.getElementById("box-preview").classList.add("opacityOn");
+                }, 3000); //Transition time ruota
+
+                
+            }
+
+            document.getElementById("close").onclick = function () {
+                document.getElementById("box-preview").classList.add("opacityOff");
+                document.getElementById("box-preview").classList.remove("opacityOn");
             }
         </script>
     </body>
