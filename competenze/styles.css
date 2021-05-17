@@ -1,0 +1,102 @@
+/* Competenze */
+body {
+    margin: 0;
+    padding: 0;
+    background: #FFD42D;
+    font-family: 'Franklin Gothic';
+    overflow: hidden;
+    display: flex;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+#competenze {
+    font-size: 60px;
+    margin: auto 0 auto 4%;
+}
+
+#competenze span {
+    display: block;
+    font-size: 0.25em;
+}
+
+.animate {
+    animation: floatingText 6s ease-in-out infinite alternate;
+}
+
+@keyframes floatingText {
+    25% { transform: translateX(-2px) translateY(+2px) rotate(1deg); }
+
+    50% { transform: translateX(+4px) translateY(0px); }
+
+    75% { transform: translateX(-1px) translateY(-1px); }
+
+    100%{ transform: translateX(-3px) translateY(+1px) rotate(-1deg); }
+
+}
+
+#container {
+    margin: auto 20% auto auto;
+    width: 30%;
+    height: 40%;
+    background-color: white;
+    position: relative;
+    font-size: 20px;
+}
+/* Forse cacciare */
+.items {
+    opacity: 0.9;
+}
+
+.items:hover {
+    opacity: 1;
+}
+
+.xs { font-size: 1.2em; animation: floatingText 6s ease-in-out infinite alternate-reverse;}
+
+.ss { font-size: 1.4em; }
+
+.ms { font-size: 1.8em; animation: floatingText 6s ease-in-out infinite alternate-reverse;}
+
+.ls { font-size: 2.2em; }
+
+.xls { font-size: 2.4em; }
+
+#php {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+}
+
+#javascript {
+    position: absolute;
+    top: 3%;
+    left: 18%;
+}
+
+#python {
+    position: absolute;
+    top: 25%;
+    left: 40%;
+}
+
+#cpp {
+    position: absolute;
+    top: 30%;
+    right: 20%;
+}
+
+#java {
+    position: absolute;
+    top: 45%;
+    left: 12%;
+}
+
+#mysql {
+    position: absolute;
+    bottom: 12%;
+    left: 30%;
+}
