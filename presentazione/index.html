@@ -4,10 +4,40 @@
         <title></title>
         <meta charset="utf-8" />
 
-        <link rel="stylesheet" type="text/css" href="../styles.css" />
+        <link rel="stylesheet" type="text/css" href="styles.css" />
     </head>
 
     <body>
-        Funziona.
+        <div id="presentazione"><span>Ciao,<br/></span>
+            io sono Luigi e ho iniziato a programmare nel 2019 con un corso introduttivo al mondo della programmazione web. Oggi le mie competenze sono molte di più, ho cercato ogni giorno di migliorare e creare progetti pratici. Mi piace imparare e la cosa che amo di più è la programmazione, in tutte le sue <span id="last-word">sfaccettature</span>.
+        </div>
+
+        <img src="../img/io-7-ritagliato.png" alt="Immagine di Luigi Zoccali (io)" />
+
+
+        <script>
+            function marginBottomAuto()
+            {
+                altezzaParola = document.getElementById("last-word").offsetHeight;
+
+                altezzaParola = altezzaParola/3;
+
+                document.getElementById("presentazione").style.marginBottom = "-" + altezzaParola + "px";
+            }
+
+            window.addEventListener('load', function(event) { 
+                marginBottomAuto();
+            });
+
+            window.addEventListener('resize', function(event) { 
+                marginBottomAuto();
+            });
+
+
+        </script>
+
+
+
+
     </body>
 </html>

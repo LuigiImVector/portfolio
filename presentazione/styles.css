@@ -1,0 +1,34 @@
+/* Presentazione */
+body {
+    margin: 0;
+    padding: 0;
+    background: #FFD42D;
+    font-family: 'Franklin Gothic';
+    overflow: hidden;
+    display: flex;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+#presentazione {
+    width: 65%;
+    margin: auto 0 0 0;
+    margin-left: 2%;
+    color: white;
+    font-size: 3.6vmax;
+    margin-bottom: 0;
+}
+
+#presentazione span:first-child {
+    font-size: 6vmax;
+}
+
+img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 15%;
+}
