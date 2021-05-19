@@ -1,0 +1,76 @@
+/* Competenze */
+body {
+    margin: 0;
+    padding: 0;
+    background: #FFD42D;
+    font-family: 'Franklin Gothic';
+    overflow: hidden;
+    display: flex;
+    color: white;
+}
+
+.background {
+    font-family: 'Dosis';
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    font-size: 100px;
+    width: 120%;
+    left: -5%;
+    color: #FDD844;
+}
+
+
+#container-competenze {
+    display: block;
+    width: 100%;
+    height: auto;
+    font-size: 2vmax;
+    margin-left: 4%;
+}
+
+#competenze {
+    font-size: 4vmax;
+    margin-top: 2%;    
+}
+
+#competenze span {
+    display: block;
+    font-size: 0.25em;
+}
+
+.items-competenze {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.progress-name {
+    width: 14%;
+}
+
+.progress-bar {
+    width: 30%;
+    height: 30px;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress {
+    width: 50%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #DB2929;
+    transition: all 0.5s ease-in-out;
+    animation: test 2s linear forwards;
+    transform: translateX(-100%);
+}
+
+@keyframes test {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
