@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic';
+    background-color: #FFD42D;
+    overflow-x: hidden;
+}
+
+body,html {
+    width: 100%;
+    height: 100%;
+}
+
+.background {
+    font-family: 'Dosis';
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    font-size: 100px;
+    width: 120%;
+    height: 100%;
+    top: -5%;
+    left: -5%;
+    color: #FDD844;
+
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+#title {
+    font-size: 5vmax;
+    color: white;
+    margin: 2% 0 4% 3%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0 0 3% 3%;
+    padding: 0;
+}
+
+li {
+    margin-top: 1%;
+    font-size: 3vmax;
+    font-family: monospace;
+}
+
+a, a:focus, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#project-preview {
+    position: fixed;
+    width: 40%;
+    height: 50%;
+    background-color: white;
+    background-image: url("https://media.giphy.com/media/n8A8omwp1mVAA/giphy.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 2px;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+}

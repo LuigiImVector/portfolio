@@ -21,17 +21,6 @@ body, html {
     height: 100%;
 }
 
-.preload {
-    animation: none !important;
-    -webkit-animation: none !important;
-    -moz-animation: none !important;
-    -o-animation: none !important;
-    transition: none !important;
-    -webkit-transition: none !important;
-    -moz-transition: none !important;
-    -o-transition: none !important;
-}
-
 .pagine {
     width: 100%;
     height: 100vh;

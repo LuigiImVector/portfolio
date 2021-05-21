@@ -63,10 +63,6 @@ function marginBottomAuto()
 
 window.addEventListener('load', function(event) { 
     marginBottomAuto();
-
-    setTimeout(function(){
-        document.getElementsByTagName("body")[0].classList.remove("preload");
-    }, 1000);
 });
 
 window.addEventListener('resize', function(event) { 
