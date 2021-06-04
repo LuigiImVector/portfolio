@@ -74,6 +74,7 @@ a:hover {
     width: 35%;
     height: auto;
     background-color: white;
+    color: black;
     border-radius: 20px;
     text-align: center;
     padding: 2% 0;
@@ -284,8 +285,11 @@ a:hover {
     border-radius: 20px;
     background-color: #DB2929;
     transition: all 0.5s ease-in-out;
+}
+
+.animationBar {
+    transform: translateX(-100%); 
     animation: loadingBarAnimation 2s linear forwards;
-    transform: translateX(-100%);
 }
 
 /* Percentage of .progress: inline */
@@ -369,6 +373,7 @@ img {
     text-align: center;
     flex-direction: column;
     transition: all 0.6s ease-in-out;
+    position: relative;
 }
 
 .items-contact:hover {
@@ -378,6 +383,12 @@ img {
 
 .items-contact:nth-of-type(2) {
     margin: 0 1%;
+}
+
+.items-contact a {
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
 
 .subtitle-contact {

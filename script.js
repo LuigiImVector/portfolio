@@ -68,3 +68,15 @@ window.addEventListener('load', function(event) {
 window.addEventListener('resize', function(event) { 
     marginBottomAuto();
 });
+
+document.addEventListener('aos:in', ({ detail }) => {
+    Array.from(document.getElementById("container-competenze").querySelectorAll(".progress")).forEach(function (item, index) {
+        item.classList.remove("animationBar");
+    })
+});
+
+document.addEventListener('aos:in:container-competenze', ({ detail }) => {
+    Array.from(document.getElementById("container-competenze").querySelectorAll(".progress")).forEach(function (item, index) {
+        item.classList.add("animationBar");
+    })
+});

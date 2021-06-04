@@ -11,6 +11,17 @@ function heightBackground()
     document.getElementsByClassName("background")[0].style.height = altezzaPagina + "px";
 }
 
+function changeImg(id)
+{
+    var preview = document.getElementById("project-preview");
+    console.log(id);
+    //id = index of array
+    console.log(imgSrc[id]);
+    preview.style.backgroundImage = 'url("'+ imgSrc[id] + '")';
+}
+
+var imgSrc = ["../img/content/gym-timer.png", "../img/content/vektoreview.png", "../img/content/er-giochetto.png", "../img/content/portfolio.png", "../img/content/partite-bot.jpg", "../img/content/no-signal.png"];
+
 window.addEventListener('load', function(event) { 
     heightBackground();
 });

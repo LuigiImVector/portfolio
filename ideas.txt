@@ -5,9 +5,5 @@ I D E A S
 Non sapevo dove appuntarmele e quindi le scrivo qua.
 
 - Puntatore custom
-- Pattarn figo che non si nota (grain effect - jonasreymondin.com/)
-- Effetto in cui quando scrolli le scritte compaiono dal basso
+- Pattern figo che non si nota (grain effect - jonasreymondin.com/)
 - Sito per navigare tra le mie repo github (non c'entra molto con il sito ma è interessante, forse)
-
-
-- Realizzare anteprima del sito quando si mette il mouse sopra un progetto
