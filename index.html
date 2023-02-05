@@ -12,108 +12,148 @@
     </head>
 
     <body>
+        <div id="noise" class="noise-background"></div>
+        <div class="cursor"></div>
+
         <div class="pagine" id="pagina1">
             <div class="background">
                 Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali
             </div>
 
-            <div id="title">
+            <div id="title" class="hover-this">
                 <div class="tilt"><u>H</u>ello, I am a developer</div>
                 <div id="subtitle">Dirlo in inglese fa figo</div>
             </div>
         </div>
 
         <div class="pagine" id="pagina2">
-            <div id="description-ruota" data-aos="fade-up">
-                G<u>i</u>ra la ruota per provare uno dei miei p<u>r</u>ogetti
-                <div><a href="/">Clicca qui</a> per la lista completa</div>
-            </div>
-    
-            <div id="box-preview">
-                <button id="close">&times;</button>
-                <div id="name">Nome</div>
-                <a id="url" href="/">Link progetto</a>
-                <div id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-            </div>
-            
-            <div id="pagina-ruota" data-aos="fade-up">
-                <div id="container-ruota">
-                    <div id="ruota">
-                        <div id="slice1"> <!-- Non fa nulla slice1 -->
-                            <span class="span1"></span>
-                            <span class="span2"></span>
-                            <span class="span3"></span>
-                            <span class="span4"></span>
+            <div id="desktop">
+                <div id="description-ruota" class="hover-this" data-aos="fade-up">
+                    Sp<u>i</u>n the wheel to discover one of my p<u>r</u>ojects
+                    <div><a href="/">Click here</a> for the full list</div>
+                </div>
+        
+                <div id="background-opacity" onclick="opacityOn()"></div>
+
+                <div id="box-preview" class="noise-background">
+                    <button id="close" class="noise-background hover-this" onclick="opacityOn()">&times;</button>
+                    <div id="name">Nome</div>
+                    <a id="url" href="/">Link progetto</a>
+                    <div id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                </div>
+                
+                <div id="pagina-ruota" data-aos="fade-up">
+                    <div id="container-ruota">
+                        <div id="ruota">
+                            <div id="slice1"> <!-- Non fa nulla slice1 -->
+                                <span class="span1 noise-background"></span>
+                                <span class="span2 noise-background"></span>
+                                <span class="span3 noise-background"></span>
+                                <span class="span4 noise-background"></span>
+                            </div>
+                            <div id="slice2">
+                                <span class="span1 noise-background"></span>
+                                <span class="span2 noise-background"></span>
+                                <span class="span3 noise-background"></span>
+                                <span class="span4 noise-background"></span>
+                            </div>
                         </div>
-                        <div id="slice2">
-                            <span class="span1"></span>
-                            <span class="span2"></span>
-                            <span class="span3"></span>
-                            <span class="span4"></span>
-                        </div>
+                        <button id="spin" class="noise-background" onclick="spin()">S P I N</button>
                     </div>
-                    <button id="spin" onclick="spin()">Gira</button>
+                </div>
+            </div>
+            <div id="mobile">
+                <div id="project-title">Projects</div>
+                <div id="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+
+                <div id="project-list">
+                    <div style="width: 25%;">
+                        <img src="img/content/partite-bot.jpg" class="project-list-image"><span class="project-list-text">Football bot</span>
+                    </div>
+                    <div style="width: 71%;">
+                        <img src="img/content/er-giochetto.png" class="project-list-image"><span class="project-list-text">Er Giochetto</span>
+                    </div>
+                    <div style="width: 25%;">
+                        <img src="img/content/test.png" class="project-list-image"><span class="project-list-text">Test</span>
+                    </div>
+                    <div style="width: 25%;">
+                        <img src="img/content/no-signal.png" class="project-list-image"><span class="project-list-text">No Signal</span>
+                    </div>
+                    <div style="width: 44%;">
+                        <img src="img/content/gym-timer.png" class="project-list-image"><span class="project-list-text">Gym Timer</span>
+                    </div>
+                    <div style="width: 75%;">
+                        <img src="img/content/vektoreview.png" class="project-list-image"><span class="project-list-text">VektoReview</span>
+                    </div>
+                    <div style="width: 21%;">
+                        <img src="img/content/er-giochetto.png" class="project-list-image"><span class="project-list-text">Portfolio</span>
+                    </div>
+                    <div style="width: 100%;">
+                        <img src="img/content/er-giochetto.png" class="project-list-image"><span class="project-list-text">Lista completa</span>
+                    </div>
                 </div>
             </div>
         </div>
 
         <div class="pagine" id="pagina3">
-            <div class="background">
-                Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali
-            </div>
-
-            <div id="container-competenze" data-aos="fade-up" data-aos-id="container-competenze">
-                <div id="competenze">
-                    Competenze
-                    <span>Non ci credi?</span>
+            <div id="container-competenze">
+                <div class="background">
+                    Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali
                 </div>
-    
-                <div class="items-competenze">
-                    <div class="progress-name">JavaScript</div>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 75%;"></div>
+                
+                <div id="animation-competenze" data-aos="fade-up" data-aos-id="animation-competenze">
+                    <div id="competenze" class="hover-this">
+                        Skills
+                        <span>Non ci credi? Vai sul mio Github // Contattami</span>
                     </div>
-                </div>
-    
-                <div class="items-competenze">
-                    <div class="progress-name">PHP</div>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 60%;"></div>
+        
+                    <div class="items-competenze">
+                        <div class="progress-name hover-this">JavaScript</div>
+                        <div class="progress-bar noise-background">
+                            <div class="progress noise-background" style="width: 75%;"></div>
+                        </div>
                     </div>
-                </div>
-    
-                <div class="items-competenze">
-                    <div class="progress-name">MySQL</div>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 50%;"></div>
+        
+                    <div class="items-competenze">
+                        <div class="progress-name hover-this">PHP</div>
+                        <div class="progress-bar noise-background">
+                            <div class="progress noise-background" style="width: 60%;"></div>
+                        </div>
                     </div>
-                </div>
-    
-                <div class="items-competenze">
-                    <div class="progress-name">C++</div>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 80%;"></div>
+        
+                    <div class="items-competenze">
+                        <div class="progress-name hover-this">MySQL</div>
+                        <div class="progress-bar noise-background">
+                            <div class="progress noise-background" style="width: 50%;"></div>
+                        </div>
                     </div>
-                </div>
-    
-                <div class="items-competenze">
-                    <div class="progress-name">Python</div>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 45%;"></div>
+        
+                    <div class="items-competenze">
+                        <div class="progress-name hover-this">C++</div>
+                        <div class="progress-bar noise-background">
+                            <div class="progress noise-background" style="width: 80%;"></div>
+                        </div>
                     </div>
-                </div>
-    
-                <div class="items-competenze">
-                    <div class="progress-name">Java</div>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 20%;"></div>
+        
+                    <div class="items-competenze">
+                        <div class="progress-name hover-this">Python</div>
+                        <div class="progress-bar noise-background">
+                            <div class="progress noise-background" style="width: 45%;"></div>
+                        </div>
+                    </div>
+        
+                    <div class="items-competenze">
+                        <div class="progress-name hover-this">Java</div>
+                        <div class="progress-bar noise-background">
+                            <div class="progress noise-background" style="width: 20%;"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="pagine" id="pagina4">
-            <div id="presentazione" data-aos="fade-up"><span>Ciao,<br/></span>
+            <div id="presentazione" class="hover-this" data-aos="fade-up"><span>Ciao,<br/></span>
                 io sono Luigi e ho iniziato a programmare nel 2019 con un corso introduttivo al mondo della programmazione web. Oggi le mie competenze sono molte di più, ho cercato ogni giorno di migliorare e creare progetti pratici. Mi piace imparare e la cosa che amo di più è la programmazione, in tutte le sue <span id="last-word">sfaccettature</span>.
             </div>
     
@@ -122,15 +162,15 @@
 
         <div class="pagine" id="pagina5">
             <div class="background">
-                Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali Luigi Zoccali
+                Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me Hire Me 
             </div>
 
-            <div id="text-contact" data-aos="fade-up">Vuoi assumermi, vero?</div>
+            <div id="text-contact" class="hover-this" data-aos="fade-up">Vuoi assumermi, vero?</div>
 
             <div id="container-contact" data-aos="fade-up">
-                <div class="items-contact"><span>Github</span><span class="subtitle-contact">Puoi vedere tutti i miei progetti Open Source.</span><a href="https://github.com/LuigiImVector " target="_blank"></a></div>
-                <div class="items-contact"><span>LinkedIn</span><span class="subtitle-contact">Articoli e informazioni più dettagliate.</span><a href="/" target="_blank"></a></div>
-                <div class="items-contact"><span>Email</span><span class="subtitle-contact">Mettiti in contatto con me.</span><a href="/" target="_blank"></a></div>
+                <div class="items-contact noise-background"><span>Github</span><span class="subtitle-contact">Puoi vedere tutti i miei progetti Open Source.</span><a href="https://github.com/LuigiImVector " target="_blank"></a></div>
+                <div class="items-contact noise-background"><span>LinkedIn</span><span class="subtitle-contact">Articoli e informazioni più dettagliate.</span><a href="/" target="_blank"></a></div>
+                <div class="items-contact noise-background"><span>Email</span><span class="subtitle-contact">Mettiti in contatto con me.</span><a href="/" target="_blank"></a></div>
             </div>
         </div>
 

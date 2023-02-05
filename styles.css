@@ -46,8 +46,16 @@ body, html {
 /* Ruota */
 
 #pagina2 {
-    background-color: #FFD42D;
+    /* background-color: #FFD42D; */
     position: relative; /* Capire se da problemi */
+}
+
+#desktop {
+    display: block;
+}
+
+#mobile {
+    display: none;
 }
 
 a, a:active, a:focus {
@@ -70,11 +78,34 @@ a:hover {
     font-size: 0.4em;
 }
 
+#description-ruota div a {
+    border-bottom: 5px dotted #fff;
+}
+
+#description-ruota div a:hover {
+    border-bottom: 5px solid #fff;
+    text-decoration: none !important;
+}
+
+#description-ruota div a:active {
+    background-color: #ffffff70;
+}
+
+#background-opacity {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #17171791;
+    top: 0;
+    z-index: 1;
+}
+
 #box-preview {
-    width: 35%;
+    width: 45%;
     height: auto;
-    background-color: white;
-    color: black;
+    background-color: #f7f7f7;
+    color: #171717;
     border-radius: 20px;
     text-align: center;
     padding: 2% 0;
@@ -89,14 +120,22 @@ a:hover {
 #close {
     cursor: pointer;
     position: absolute;
-    background-color: white;
+    background-color: transparent;
     border-radius: 50%;
-    top: 0;
-    right: -10px;
+    top: 3%;
+    right: 1%;
     padding: 12px 17px;
-    transform: translate(0%, -50%);
+    /* transform: translate(0%, -50%); */
     font-size: 20px;
     border: none;
+}
+
+#close:hover {
+    background-color: #f3f3f3;
+}
+
+#close:active {
+    background-color: #f0f0f0;
 }
 
 #name {
@@ -116,7 +155,7 @@ a:hover {
 }
 
 .opacityOff {
-    display: block !important;
+    display: none !important;
     animation: opacity0 0.3s ease-in-out;
     opacity: 0;
 }
@@ -139,7 +178,7 @@ a:hover {
 #url, #description {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
-    color: black;
+    color: #171717;
 }
 
 
@@ -157,15 +196,16 @@ a:hover {
     min-width: 500px;
     height: 500px;
     /*bottom: -230px;*/
-    top: -10%;
+    top: -15%;
+    transform: scale(1.2);
 }
 
 #container-ruota::before {
     position: absolute;
     content: '↓';   /* Sembra una faccina ahahah, sono simpatico, assumetemi per favore :< */
     text-align: center;
-    font-size: 20px;
-    top: -30px;
+    font-size: 1.3vmax;
+    top: -40px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -175,7 +215,7 @@ a:hover {
     height: 100%;
     position: relative;
     border-radius: 50%;
-    border: 10px solid black;
+    border: 10px solid #171717;
     overflow: hidden;
     transition: all 3s ease-in-out;
 }
@@ -229,9 +269,76 @@ a:hover {
     width: 75px;
     height: 75px;
     border-radius: 50%;
-    border: 1px solid black;
-    color: black;
+    border: 1px solid #171717;
+    color: #171717;
     background-color: #FFD42D;
+    font-family: 'Franklin Gothic';
+}
+
+#project-title {
+    font-size: 8vmax;
+    font-family: 'Franklin Gothic';
+    text-align: center;
+    margin: 3% auto;
+}
+
+#project-description {
+    font-size: 1.5vmax;
+    text-align: center;
+    font-family: 'Franklin Gothic';
+    margin: auto 2%;
+}
+
+#project-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: 'Franklin Gothic';
+    margin: 8% auto;
+}
+
+
+#project-list div {
+    display: flex;
+    height: 150px;
+    background-color: #fff;
+    margin: 1%;
+    padding: 1%;
+    color: #171717;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-list-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(2px);
+    transform: scale(1.1);
+    z-index: 0;
+}
+
+.project-list-image:active {
+    transform: scale(1.2);
+    filter: blur(3px);
+}
+
+.project-list-text:active {
+    /* transform: scale(1.2); */
+    font-size: 2em;
+}
+
+.project-list-text {
+    font-size: 3vmax;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0px 0px 15px #171717;
+    word-wrap: anywhere;
+    z-index: 10;
 }
 
 /* Competenze */
@@ -256,6 +363,7 @@ a:hover {
     height: auto;
     font-size: 2vmax;
     margin-left: 4%;
+    position: relative;
 }
 
 .items-competenze {
@@ -303,7 +411,7 @@ a:hover {
 #pagina4 {
     display: flex;
     position: relative;
-    background-color: #FFD42D;
+    /* background-color: #FFD42D; */
 }
 
 #presentazione {
@@ -359,7 +467,7 @@ img {
     display: flex;
     width: 500px;
     height: 400px;
-    border: 1px solid black;
+    border: 1px solid #171717;
     font-family: 'Impact';
     font-size: 3vmax;
     color: white;
@@ -376,7 +484,7 @@ img {
     position: relative;
 }
 
-.items-contact:hover {
+.items-contact:hover, .item-contact:active {
     flex-grow: 4;
     background-color: #121212;
 }
@@ -417,6 +525,10 @@ img {
 /* Responsive */
 @media (max-width: 575.98px)
 {
+    #title {
+        font-size: 6vmax;
+    }
+
     #box-preview {
         width: 65%;
         padding: 8% 0;
@@ -449,6 +561,7 @@ img {
 
     #competenze {
         font-size: 6vmax;
+        text-align: center;
     }
 
     #competenze span {
@@ -457,14 +570,17 @@ img {
 
     .items-competenze {
         margin-top: 10%;
+        flex-direction: column;
     }
 
     .progress-name {
         width: 25%;
+        text-align: center;
     }
 
     .progress-bar {
-        width: 65%;
+        width: 69%;
+        margin: 4% auto;
     }
 
     #presentazione {
@@ -479,8 +595,14 @@ img {
         width: 25%;
     }
 
+    #text-contact {
+        top: 9%;
+    }
+
     #container-contact {
         flex-direction: column;
+        margin-top: 45%;
+        margin-bottom: 15%;
     }
   
     .items-contact:nth-of-type(2) {
@@ -490,6 +612,14 @@ img {
     .items-contact {
         width: 300px;
         height: 200px;
+    }
+
+    #desktop {
+        display: none;
+    }
+
+    #mobile {
+        display: block;
     }
   
 }
@@ -509,20 +639,12 @@ img {
         top: 40%
     }
 
-    #competenze {
-        font-size: 5vmax;
-    }
-
     #competenze span {
         font-size: 0.3em;
     }
 
     .progress-name {
         width: 25%;
-    }
-
-    .progress-bar {
-        width: 40%;
     }
 
     .items-competenze {
