@@ -1,7 +1,39 @@
-/* Selezioni */
+/***** Scrollbar CSS *****/
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #171717 #ffffff;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #171717;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+}
+
+/***** GENERIC *****/
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
 ::selection {
     color: #FFFFFF;
-    background: #FF6A67;    /* #FF2D2D */
+    background: #FF6A67; /* #FF2D2D */
+}
+
+html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -10,6 +42,13 @@ body {
     font-family: 'Franklin Gothic';
     background-color: #FFD42D;
     color: white;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
 }
 
 a, a:focus, a:visited {
@@ -20,6 +59,8 @@ a, a:focus, a:visited {
 a:hover {
     text-decoration: underline;
 }
+
+/***** NOISE BACKGROUND *****/
 
 #noise {
     position: fixed;
@@ -51,6 +92,7 @@ a:hover {
     100% { transform: translate(5%,0) }
 }
 
+/***** CUSTOM CURSOR *****/
 .cursor {
     pointer-events: none;
     position: fixed;
@@ -62,6 +104,7 @@ a:hover {
     z-index: 10;
 }
 
+/***** BACKGROUND *****/
 .background {
     font-family: 'Dosis';
     position: absolute; /* fixed */

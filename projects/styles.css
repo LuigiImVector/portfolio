@@ -3,15 +3,19 @@ body {
 }
 
 #title {
+    position: relative;
     font-size: 5vmax;
     color: white;
     margin: 2% 0 4% 3%;
+    z-index: 1;
 }
 
 ul {
+    position: relative;
     list-style-type: none;
     margin: 0 0 3% 3%;
     padding: 0;
+    z-index: 1;
 }
 
 li {
@@ -44,6 +48,7 @@ a:hover {
     right: 10%;
     transform: translateY(-50%);
     box-shadow: 0px 10px 21px -15px #000;
+    z-index: -1;
 }
 
 @media (max-width: 575.98px)
