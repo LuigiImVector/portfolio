@@ -11,6 +11,7 @@ body {
 }
 
 ul {
+    width: 45%;
     position: relative;
     list-style-type: none;
     margin: 0 0 3% 3%;

@@ -126,6 +126,12 @@ a:hover {
 #url {
     display: block;
     padding: 2% 0 1% 0;
+    text-decoration: underline !important;
+}
+
+#read-more {
+    color: initial;
+    text-decoration: underline;
 }
 
 /* Animation box-preview */
@@ -254,6 +260,7 @@ a:hover {
     color: #171717;
     background-color: #FFD42D;
     font-family: 'Franklin Gothic';
+    cursor: pointer;
 }
 
 #project-title {
@@ -411,7 +418,7 @@ a:hover {
 img {
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 5px;
     width: 15%;
 }
 

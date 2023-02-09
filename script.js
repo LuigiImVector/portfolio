@@ -22,13 +22,6 @@ const universalTilt = UniversalTilt.init({
 const incremento = 135; // deg + 135 per incrementare la velocità
 var deg = 0;
 
-var progetti = [
-    ["Nome1", "https://www.example.com/", "Descrizione", "img/immagine-forse.png"],
-    ["Nome2", "https://www.example.com/", "Descrizione", "img/immagine-forse.png"],
-    ["Nome3", "https://www.example.com/", "Descrizione", "img/immagine-forse.png"],
-    ["Nome4", "https://www.example.com/", "Descrizione", "img/immagine-forse.png"]
-];
-
 function spin() {
     var tmp = Math.floor(Math.random() * 10);
 
@@ -40,12 +33,14 @@ function spin() {
         tmp = Math.floor(Math.random() * progetti.length);
 
         document.getElementById("name").innerHTML = progetti[tmp][0];
+        document.getElementById("url").innerHTML = progetti[tmp][1];
         document.getElementById("url").href = progetti[tmp][1];
-        document.getElementById("description").innerHTML = progetti[tmp][2];
+        document.getElementById("description").innerHTML = progetti[tmp][2] + `<a href="${progetti[tmp][4]}" id="read-more"">[...]</a>`;
+        document.getElementById("read-more").addEventListener('mousemove', animateit);
+        document.getElementById("read-more").addEventListener('mouseleave', animateit);
 
         document.getElementById("background-opacity").classList.remove("opacityOff");
         document.getElementById("background-opacity").classList.add("opacityOn");
-        
         document.getElementById("box-preview").classList.remove("opacityOff");
         document.getElementById("box-preview").classList.add("opacityOn");
     }, 3000); //Transition time wheel                 
@@ -62,11 +57,11 @@ function opacityOn() {
 /***** HALF WORD in the DESCRIPTION *****/
 
 function marginBottomAuto() {
-    altezzaParola = document.getElementById("last-word").offsetHeight;
+    // altezzaParola = document.getElementById("last-word").offsetHeight;
 
-    altezzaParola = altezzaParola/3;
+    // altezzaParola = altezzaParola/3;
 
-    document.getElementById("presentazione").style.marginBottom = "-" + altezzaParola + "px";
+    // document.getElementById("presentazione").style.marginBottom = "-" + altezzaParola + "px";
 }
 
 window.addEventListener('load', function(event) { 
