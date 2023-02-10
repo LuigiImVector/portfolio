@@ -1,6 +1,6 @@
 /***** GLOBAL *****/
 var progetti = [
-    ["Time Capsule", "https://github.com/LoldemortXP/TimeCapsule", "2D parody game developed in pure JavaScript, without library", "img/content/er-giochetto.png", "content/er-giochetto/index.html"],
+    ["Time Capsule", "https://github.com/LoldemortXP/TimeCapsule", "Platform to create a time capsule with your own photos and files", "img/content/er-giochetto.png", "content/er-giochetto/index.html"],
     ["Er Giochetto", "https://luigiimvector.github.io/ErGiochetto/", "2D parody game developed in pure JavaScript, without library", "img/content/er-giochetto.png", "content/er-giochetto/index.html"],
     ["Socus", "https://socus.netlify.app/", "Simple website for fast reading", "img/content/socus.png", "content/socus/index.html"],
     ["scrnsht", "https://github.com/LuigiImVector/scrnsht", "Website to take custom screenshots, useful for Twitter", "img/content/scrnsht.png", "content/scrnsht/index.html"],

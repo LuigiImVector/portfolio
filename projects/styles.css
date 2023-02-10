@@ -6,13 +6,16 @@ body {
     position: relative;
     font-size: 5vmax;
     color: white;
+    text-align: left;
     margin: 2% 0 4% 3%;
     z-index: 1;
 }
 
 ul {
+    display: block;
     width: 45%;
     position: relative;
+    text-align: left;
     list-style-type: none;
     margin: 0 0 3% 3%;
     padding: 0;
@@ -52,10 +55,7 @@ a:hover {
     z-index: -1;
 }
 
-@media (max-width: 575.98px)
-{
-    
-}
+
 
 @media (max-width: 991.98px)
 {
@@ -81,4 +81,23 @@ a:hover {
 @media (max-width: 1399.98px)
 {
 
+}
+
+@media (max-width: 575.98px)
+{
+    #title {
+        font-size: 7vmax;
+        text-align: center;
+    }
+
+    ul {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 4%;
+    }
+
+    li {
+        margin-top: 6%;
+    }
 }

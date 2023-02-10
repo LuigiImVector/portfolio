@@ -35,7 +35,8 @@ function spin() {
         document.getElementById("name").innerHTML = progetti[tmp][0];
         document.getElementById("url").innerHTML = progetti[tmp][1];
         document.getElementById("url").href = progetti[tmp][1];
-        document.getElementById("description").innerHTML = progetti[tmp][2] + `<a href="${progetti[tmp][4]}" id="read-more"">[...]</a>`;
+        // document.getElementById("description").innerHTML = progetti[tmp][2] + `<a href="${progetti[tmp][4]}" id="read-more"">[...]</a>`;
+        document.getElementById("description").innerHTML = progetti[tmp][2] + `<a href="javascript:void(0)" id="read-more"">[...]</a>`;
         document.getElementById("read-more").addEventListener('mousemove', animateit);
         document.getElementById("read-more").addEventListener('mouseleave', animateit);
 
