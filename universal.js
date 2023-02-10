@@ -26,13 +26,35 @@ function animateit (e) {
 };
 
 function editCursor (e) {
-    const { clientX: x, clientY: y } = e;
-    cursor.style.left = x + 'px';
-    cursor.style.top = y + 'px';
+    if (detectMobile()) {
+        cursor.style.display = "none";
+    } else {
+        cursor.style.display = "block";
+        const { clientX: x, clientY: y } = e;
+        cursor.style.left = x + 'px';
+        cursor.style.top = y + 'px';
+    }
 };
+
+function detectMobile() {
+    const toMatch = [
+        /Android/i,
+        /webOS/i,
+        /iPhone/i,
+        /iPad/i,
+        /iPod/i,
+        /BlackBerry/i,
+        /Windows Phone/i
+    ];
+    
+    return toMatch.some((toMatchItem) => {
+        return navigator.userAgent.match(toMatchItem);
+    });
+}
 
 hoverThis.forEach(b => b.addEventListener('mousemove', animateit));
 hoverThis.forEach(b => b.addEventListener('mouseleave', animateit));
 link.forEach(b => b.addEventListener('mousemove', animateit));
 link.forEach(b => b.addEventListener('mouseleave', animateit));
 window.addEventListener('mousemove', editCursor);
+window.addEventListener('load', editCursor);

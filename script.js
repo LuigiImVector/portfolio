@@ -53,36 +53,3 @@ function opacityOn() {
     document.getElementById("box-preview").classList.add("opacityOff");
     document.getElementById("box-preview").classList.remove("opacityOn");
 }
-
-/***** HALF WORD in the DESCRIPTION *****/
-
-function marginBottomAuto() {
-    // altezzaParola = document.getElementById("last-word").offsetHeight;
-
-    // altezzaParola = altezzaParola/3;
-
-    // document.getElementById("presentazione").style.marginBottom = "-" + altezzaParola + "px";
-}
-
-window.addEventListener('load', function(event) { 
-    marginBottomAuto();
-});
-
-window.addEventListener('resize', function(event) { 
-    marginBottomAuto();
-});
-
-
-/***** ANIMATION BAR *****/
-
-document.addEventListener('aos:in', ({ detail }) => {
-    Array.from(document.getElementById("animation-competenze").querySelectorAll(".progress")).forEach(function (item, index) {
-        item.classList.remove("animationBar");
-    })
-});
-
-document.addEventListener('aos:in:animation-competenze', ({ detail }) => {
-    Array.from(document.getElementById("animation-competenze").querySelectorAll(".progress")).forEach(function (item, index) {
-        item.classList.add("animationBar");
-    })
-});
