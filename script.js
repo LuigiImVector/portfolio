@@ -23,7 +23,7 @@ const incremento = 135; // deg + 135 per incrementare la velocità
 var deg = 0;
 
 function spin() {
-    var tmp = Math.floor(Math.random() * 10);
+    var tmp = Math.floor(Math.random() * 8);
 
     deg += (tmp*incremento)*3;
 

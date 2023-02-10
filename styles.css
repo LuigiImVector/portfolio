@@ -101,7 +101,7 @@ a:hover {
 #close {
     cursor: pointer;
     position: absolute;
-    background-color: transparent;
+    background-color: inherit;
     border-radius: 50%;
     top: 3%;
     right: 1%;
@@ -335,64 +335,108 @@ a:hover {
     color: white;
 }
 
-#competenze {
-    font-size: 4vmax;
-    margin-top: 2%;    
+#competenze-container {
+    display: flex;
+    position: relative;
+    width: 92%;
+    /* height: 75%; */
+    height: 90%;
+    flex-direction: row;
+    text-transform: uppercase;
+    justify-content: space-between;
+    margin: 2% 4% 0 4%;
+    z-index: 1;
 }
 
-#competenze span {
+#competenze-container > div {
+    width: 49%;
+    height: 100%;
+}
+
+.section-title {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    font-size: 4vmax;
+    /* margin: 2% 4% 0 4%; */
+    margin: 0 0 2% 0;
+    z-index: 1;
+}
+
+.section-title span {
     display: block;
     font-size: 0.25em;
 }
 
-#container-competenze {
-    display: block;
-    width: 100%;
-    height: auto;
-    font-size: 2vmax;
-    margin-left: 4%;
-    position: relative;
-}
-
-.items-competenze {
-    margin-top: 3%;
+.item-container {
     display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
-}
-
-.progress-name {
-    width: 14%;
-}
-
-.progress-bar {
-    width: 30%;
-    height: 34px;
-    background-color: white;
-    border: 2px solid white;
-    border-radius: 20px;
+    flex-wrap: wrap;
+    height: 100%;
+    background-color: #FFD42D70;
+    border: 4px dashed #fff;
+    align-content: baseline;
     overflow: hidden;
 }
 
-.progress {
-    width: 50%;
-    height: 100%;
-    border-radius: 20px;
-    background-color: #DB2929;
-    transition: all 0.5s ease-in-out;
+#skills-container {
+    flex-wrap: wrap;
+    align-content: baseline;
 }
 
-.animationBar {
-    transform: translateX(-100%); 
-    animation: loadingBarAnimation 2s linear forwards;
+.skills-item {
+    display: flex;
+    /* width: 31.3%; */
+    height: 12.5%;
+    background-color: #fffc;
+    border: 1px solid #fff;
+    color: #171717;
+    font-size: 2vmax;
+    justify-content: center;
+    align-items: center;
+    margin: 1%
 }
 
-/* Percentage of .progress: inline */
+.skills-item:hover, .work-item:hover {
+    background-color: #ffffffe6;
+}
 
-@keyframes loadingBarAnimation {
-    0% { transform: translateX(-100%); }
-    100% { transform: translateX(0); }
+#work-container {
+    flex-direction: column;
+    margin-top: 0;
+}
+
+.work-item {
+    display: flex;
+    width: 100%;
+    height: 18%;
+    background-color: #fffc;
+    border: 1px solid #fff;
+    color: #171717;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+    padding: 0 5%;
+}
+
+.work-title {
+    width: 100%;
+    font-size: 2.5vmax;
+}
+
+.work-subtitle {
+    display: flex;
+    width: 100%;
+    font-size: 1.2vmax;
+}
+
+.work-date {
+    width: 30%;
+}
+
+.work-role {
+    width: 70%;
 }
 
 /* Presentazione */
@@ -543,34 +587,6 @@ img {
         font-size: 18px;
     }
 
-    #container-competenze {
-        font-size: 2.4vmax;
-    }
-
-    #competenze {
-        font-size: 6vmax;
-        text-align: center;
-    }
-
-    #competenze span {
-        font-size: 0.3em;
-    }
-
-    .items-competenze {
-        margin-top: 10%;
-        flex-direction: column;
-    }
-
-    .progress-name {
-        width: 25%;
-        text-align: center;
-    }
-
-    .progress-bar {
-        width: 69%;
-        margin: 4% auto;
-    }
-
     #presentazione {
         font-size: 3.75vmax;
     }
@@ -602,6 +618,10 @@ img {
         height: 200px;
     }
 
+    #pagina2 {
+        height: auto;
+    }
+
     #desktop {
         display: none;
     }
@@ -621,26 +641,42 @@ img {
 
 @media (max-width: 769px)
 {
+    html {
+        scroll-snap-type: unset !important;
+    }
+
     #box-preview {
         width: 48%;
         padding: 4% 0;
         top: 40%
     }
 
-    #competenze span {
-        font-size: 0.3em;
+    #pagina2 {
+        height: auto;
     }
 
-    .progress-name {
-        width: 25%;
+    #desktop {
+        display: none;
     }
 
-    .items-competenze {
-        margin-top: 6%;
+    #mobile {
+        display: block;
     }
 
-    #container-competenze {
-        font-size: 2.5vmax;
+    #pagina3 {
+        height: 150vh;
+    }
+
+    #competenze-container {
+        flex-direction: column;
+    }
+
+    #competenze-container > div {
+        width: 99%;
+    }
+
+    #work-container {
+        margin-top: 10%;
     }
 
     #presentazione {
