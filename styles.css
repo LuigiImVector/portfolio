@@ -288,15 +288,16 @@ a:hover {
 
 #project-list div {
     display: flex;
+    position: relative;
     height: 150px;
     background-color: #fff;
-    margin: 1%;
-    padding: 1%;
     color: #171717;
+    border-radius: 6px;
     justify-content: center;
     align-items: center;
-    position: relative;
     overflow: hidden;
+    margin: 1%;
+    padding: 1%;
 }
 
 .project-list-image {
@@ -316,7 +317,7 @@ a:hover {
 
 .project-list-text:active {
     /* transform: scale(1.2); */
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 .project-list-text {
